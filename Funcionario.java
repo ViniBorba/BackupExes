@@ -3,9 +3,10 @@ class Funcionario{
 	String nome = "joca";
 	String departamento;
 	double salario;
-	Data dataEtraada;
+	//Data dataEtraada;
 	String rg;
 	boolean efetivo = true;
+	Empresa empresaOndeTrabalho;
 
 	//Metodo para aumentar o salário VOID NÃO RETORNA, SÓ MUDA ALGO. COM PARÃMETRO
 	void recebeAumento(double aumento){
@@ -40,6 +41,9 @@ class Funcionario{
 		//System.out.println("Data de Etrada: "+dataEtraada.dia+"/"+dataEtraada.mes+"/"+dataEtraada.ano);
 		System.out.println("RG: "+rg);
 
+		System.out.println(empresaOndeTrabalho.nome);
+		System.out.println(empresaOndeTrabalho.cnpj);
+
 		if(efetivo == true){
 			System.out.println("Efetivo\n");
 		} 
@@ -48,5 +52,23 @@ class Funcionario{
 				}
 
 		
+	}
+}
+
+
+class Empresa{
+
+	String nome;
+	String cnpj;
+	Funcionario empregado;
+
+		//e1.nome = "Dell";
+		//e2.nome = "Microsoft";
+		//e3.nome = "Facebook";
+
+
+
+	void adicionaFuncionario(Funcionario f){
+		this.empregado = f;
 	}
 }

@@ -1,1 +1,4 @@
 *.class
+	Exes Velhos/
+	game_new.js
+	game_old.js
