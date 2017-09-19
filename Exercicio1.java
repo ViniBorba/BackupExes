@@ -9,6 +9,7 @@ class Exercicio1{
 
 		Exercicio2 novoObjeto;
 		novoObjeto = new Exercicio2();
+		
 
 		for(int i=150; i<=160; i++){
 			System.out.println(i);
