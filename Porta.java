@@ -1,31 +1,43 @@
 class Porta{
 
-	int portaAberta;
-	int portaFechada;
+	private int portaAberta;
+	private int portaFechada;
+	private String corPorta;
 	static int portaCriada;
 
 	Porta(){
-		portaCriada += 1;
+		this.portaCriada += 1;
+		this.portaAberta += 1;
+		this.portaFechada +=1;
+	}
+	
+	void mudaCorPorta(String cor){
+		cor = this.corPorta;
+	}
+	
+	String mostraCorPorta(){
+		return this.corPorta;
 	}
 	
 	//Abre fecha e fecha portas
 	void abrePorta(){
-		this.portaAberta += 1;
+		this.portaAberta = this.portaAberta + 1;
 	}
 	void fechaPorta(){
-		this.portaFechada += 1;
+		this.portaFechada = this.portaFechada + 1;
+		
 	}
 
 	int portasAbertas(){
-		return portaAberta;
+		return this.portaAberta;
 	}
 
 	int portasFechadas(){
-		return portaFechada;
+		return this.portaFechada;
 	}
 
 	int quantiaDePorta(){
-		return portaCriada;
+		return this.portaCriada;
 	}
 
 }

@@ -1,12 +1,15 @@
 class Casa{
 	
-	String cor;
-	int totalDePortas;
+	private String cor;
+	private int totalDePortas;
 	Porta portas[];
-
 
 	void pintaCasa (String s){
 		this.cor = s;
+	}
+	
+	String corDaCasa(){
+		return this.cor;
 	}
 
 	//int quantasPortasAbertas(){
@@ -14,10 +17,10 @@ class Casa{
 	//}
 
 	void adicionaPorta(Porta p){
-		this.totalDePortas =+ 1;
+		this.totalDePortas = this.totalDePortas + 1;
 	}
 
 	int totalDePortas(){
-		return totalDePortas;
+		return this.totalDePortas;
 	}
 }
