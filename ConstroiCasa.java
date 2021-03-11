@@ -9,10 +9,15 @@ class ConstroiCasa{
 		//Porta portaDoBanheiro = new Porta();
 		Porta[] portasDaCasa = new Porta[4];
 		
+		//Tem que inicializa/ ou seria criar/ o objeto dentro do Array
+		portasDaCasa[0] = new Porta();
+		portasDaCasa[1] = new Porta();
+		portasDaCasa[2] = new Porta();
+		portasDaCasa[3] = new Porta();;
 		
 		minhaCasa.adicionaPorta(portasDaCasa[0]);
+		portasDaCasa[0].setCorPorta("Azul");
 		
-		//portasDaCasa[0].mudaCorPorta("Verde");
 		
 		minhaCasa.adicionaPorta(portasDaCasa[1]);
 		//portasDaCasa[1].abrePorta();
@@ -43,12 +48,12 @@ class ConstroiCasa{
 		minhaCasa.pintaCasa("Amarelo");
 		
 		System.out.println(minhaCasa.totalDePortas());
-		System.out.println("Portas Abertas: "+ portasDaCasa[4].portasAbertas());
+		//System.out.println("Portas Abertas: "+ portasDaCasa[4].portasAbertas());
 		//System.out.println("Portas Fechadas: "+ portasDaCasa[4].portasFechadas());
 		//System.out.println("Portas Abertas: "+portasDaCasa[3].portasAbertas());
 		//System.out.println("Portas Fechadas: "+portasDaCasa[3].portasFechadas());
 		System.out.println("A cor da minha casa é: " + minhaCasa.corDaCasa());
-		//System.out.println("A cor da porta 1 é: " + portasDaCasa[0]);
+		System.out.println("A cor da porta 1 é: " + portasDaCasa[0].getMostraCorPorta());
 		System.out.println(portasDaCasa[0]);
 		System.out.println(portasDaCasa[1]);
 		System.out.println(portasDaCasa[2]);
