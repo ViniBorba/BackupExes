@@ -47,8 +47,13 @@ class ConstroiCasa{
 		
 		minhaCasa.pintaCasa("Amarelo");
 		
+		//Percorrer array
+		for(int i = 0; i < portasDaCasa.length; i++){
+			System.out.println(portasDaCasa[i]);
+		}
+		
 		System.out.println(minhaCasa.totalDePortas());
-		System.out.println("Portas Abertas: "+ portasDaCasa[0].portasAbertas());
+		//System.out.println("Portas Abertas: "+ portasDaCasa[0].portasAbertas());
 		//System.out.println("Portas Fechadas: "+ portasDaCasa[4].portasFechadas());
 		//System.out.println("Portas Abertas: "+portasDaCasa[3].portasAbertas());
 		//System.out.println("Portas Fechadas: "+portasDaCasa[3].portasFechadas());
