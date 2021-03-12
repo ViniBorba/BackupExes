@@ -2,18 +2,18 @@ class Porta{
 
 	private int portaAberta;
 	private int portaFechada;
-	String corPorta;
+	private String corPorta;
 	static int portaCriada;
 
 	Porta(){
-		this.portaCriada += 1;
-		this.portaAberta += 1;
-		this.portaFechada +=1;
-		corPorta = "Branco";
+		this.portaCriada = 0;
+		this.portaAberta = 0;
+		this.portaFechada = 0;
+		this.corPorta = "Branco";
 	}
 	
 	void setCorPorta(String cor){
-		cor = this.corPorta;
+		this.corPorta = cor;
 	}
 	
 	String getMostraCorPorta(){

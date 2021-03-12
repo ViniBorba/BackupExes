@@ -17,7 +17,7 @@ class ConstroiCasa{
 		
 		minhaCasa.adicionaPorta(portasDaCasa[0]);
 		portasDaCasa[0].setCorPorta("Azul");
-		
+		portasDaCasa[0].abrePorta();
 		
 		minhaCasa.adicionaPorta(portasDaCasa[1]);
 		//portasDaCasa[1].abrePorta();
@@ -48,12 +48,12 @@ class ConstroiCasa{
 		minhaCasa.pintaCasa("Amarelo");
 		
 		System.out.println(minhaCasa.totalDePortas());
-		//System.out.println("Portas Abertas: "+ portasDaCasa[4].portasAbertas());
+		System.out.println("Portas Abertas: "+ portasDaCasa[0].portasAbertas());
 		//System.out.println("Portas Fechadas: "+ portasDaCasa[4].portasFechadas());
 		//System.out.println("Portas Abertas: "+portasDaCasa[3].portasAbertas());
 		//System.out.println("Portas Fechadas: "+portasDaCasa[3].portasFechadas());
-		System.out.println("A cor da minha casa é: " + minhaCasa.corDaCasa());
-		System.out.println("A cor da porta 1 é: " + portasDaCasa[0].getMostraCorPorta());
+		System.out.println("A cor da minha casa e: " + minhaCasa.corDaCasa());
+		System.out.println("A cor da porta 1 e: " + portasDaCasa[0].getMostraCorPorta());
 		System.out.println(portasDaCasa[0]);
 		System.out.println(portasDaCasa[1]);
 		System.out.println(portasDaCasa[2]);
