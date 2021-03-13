@@ -20,7 +20,7 @@ class Casa{
 		this.totalDePortas = this.totalDePortas + 1;
 	}
 
-	int totalDePortas(){
+	public int totalDePortas(){
 		return this.totalDePortas;
 	}
 }
